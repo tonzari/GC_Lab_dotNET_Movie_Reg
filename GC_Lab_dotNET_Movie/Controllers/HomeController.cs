@@ -36,6 +36,8 @@ namespace GC_Lab_dotNET_Movie.Controllers
 
         public IActionResult Result(Movie movieResult)
         {
+            ViewBag.name = movieResult.Title;
+
             return View(movieResult);
         }
 
