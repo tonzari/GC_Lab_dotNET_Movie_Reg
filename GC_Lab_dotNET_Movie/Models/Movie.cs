@@ -7,17 +7,35 @@ namespace GC_Lab_dotNET_Movie.Models
 {
     public class Movie
     {
-        public int ID { get; set; }
+        public string ID { get; set; }
+        public string Title { get; set; }
+        public string Genre { get; set; }
+        public string Year { get; set; }
+        public string Actors { get; set; }
+        public string Directors { get; set; }
+
+/*        public static int ID { get; set; }
         public string Title { get; set; }
         public string Genre { get; set; }
         public int Year { get; set; }
         public List<Actor> Actors { get; set; }
-        public List<Director> Directors { get; set; }
-    }  
+        public List<Director> Directors { get; set; }*/
+
+        // not sure if we can have constructor
+/*        public Movie(int iD, string title, string genre, int year, List<Actor> actors, List<Director> directors)
+        {
+            ID++;
+            Title = title;
+            Genre = genre;
+            Year = year;
+            Actors = actors;
+            Directors = directors;
+        }*/
+    }
 
     // Extra classes to customize the Movie class
 
-    public abstract class Person
+/*    public abstract class Person
     {
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
@@ -50,5 +68,5 @@ namespace GC_Lab_dotNET_Movie.Models
         public Director(string FirstName, string MiddleName, string LastName) : base(FirstName, MiddleName, LastName)
         {
         }
-    }
+    }*/
 }

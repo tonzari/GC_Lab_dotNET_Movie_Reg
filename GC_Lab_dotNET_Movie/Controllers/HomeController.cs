@@ -33,6 +33,12 @@ namespace GC_Lab_dotNET_Movie.Controllers
             return View();
         }
 
+
+        public IActionResult Result(Movie movieResult)
+        {
+            return View(movieResult);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
