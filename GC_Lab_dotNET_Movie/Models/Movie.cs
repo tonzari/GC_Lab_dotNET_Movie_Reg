@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,9 +9,11 @@ namespace GC_Lab_dotNET_Movie.Models
     public class Movie
     {
         public string ID { get; set; }
+        [Required]
         public string Title { get; set; }
+        [Required]
         public string Genre { get; set; }
-        public string Year { get; set; }
+        public DateTime Year { get; set; }
         public string Actors { get; set; }
         public string Directors { get; set; }
 

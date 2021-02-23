@@ -1,14 +1,4 @@
-﻿<!--
-
-    title - - - - text field
-    genre - - - - HARD = drop down menu, EASY text field
-    year  - - - - drop down year, or text field
-    actors  - - - text field with + button to add more... hard
-    directors - - same as above
-
-    -->
-
-@model GC_Lab_dotNET_Movie.Models.Movie
+﻿@model GC_Lab_dotNET_Movie.Models.Movie
 
 @{
     ViewData["Title"] = "View";
@@ -19,7 +9,6 @@
     <h1 class="display-4">Movie Registration</h1>
     <p>Please fill out and submit the following form to register a movie.</p>
 </div>
-
 
 <div action="" class="container">
     <form method="post" asp-action="Result">
@@ -34,7 +23,13 @@
         <div class="form-group row">
             <label for="Genre" class="col-sm-2 col-form-label">Genre</label>
             <div class="col-sm-10">
-                <input asp-for="Genre" type="text" class="form-control" name="Genre" id="Genre" placeholder="Genre">
+                <select asp-for="Genre" class="form-control" id="Genre">
+                    <option>Action</option>
+                    <option>Animation</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Horror</option>
+                </select>
             </div>
         </div>
 
